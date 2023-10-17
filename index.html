@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <h1>CALCULATRICE</h1>
+
+    <div class="back shadow">
+        <header id="ecran">
+           <span id="spanNb1"></span>
+           <span id="spanSymb"></span>
+           <span id="spanNb2"></span><br>
+           <span id="spanNb3"></span>
+        </header>
+
+        <div class="pad">
+            <div class="num">
+                <div id="color1" class="button" type="button" onclick="effacer()">AC</div>
+                <div id="color2" class="button" type="button" onclick="afficherSymb('/')">/</div>
+                <div id="color3" class="button" type="button" onclick="afficherSymb('*')">x</div>
+                <div id="color4" class="button" type="button" onclick="afficherSymb('-')">-</div>
+            </div>
+
+
+            <div class="num">
+                <div class="button" type="button" onclick="afficherNb('7')">7</div>
+                <div class="button" type="button" onclick="afficherNb('8')">8</div>
+                <div class="button" type="button" onclick="afficherNb('9')">9</div>
+                <div id="color5" class="button" type="button" onclick="afficherSymb('+')">+</div>
+            </div>
+
+
+            <div class="num">
+                <div class="button" type="button" onclick="afficherNb('4')">4</div>
+                <div class="button" type="button" onclick="afficherNb('5')">5</div>
+                <div class="button" type="button" onclick="afficherNb('6')">6</div>
+                <div class="button" type="button" onclick="afficherNb('.')">.</div>
+            </div>
+
+
+            <div class="num">
+                <div class="button" type="button" onclick="afficherNb('1')">1</div>
+                <div class="button" type="button" onclick="afficherNb('2')">2</div>
+                <div class="button" type="button" onclick="afficherNb('3')">3</div>
+                <div class="button" type="button" onclick="afficherNb('0')">0</div>
+            </div>
+
+            <div class="num">
+                <div id="color6" class="button" type="button" onclick="calculer()">=</div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
